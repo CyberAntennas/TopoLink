@@ -1,7 +1,69 @@
+# Dependencies and package-manager state
 node_modules/
+.pnpm-store/
+.yarn/
+.bun/
+
+# Build and framework output
 dist/
+build/
+out/
+.next/
+.turbo/
+.vite/
+*.tsbuildinfo
+
+# Tests and coverage
 coverage/
+.nyc_output/
 playwright-report/
 test-results/
+
+# Logs and runtime files
 *.log
+*.log.*
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.pid
+*.pid.lock
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Caches and temporary files
+.cache/
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.tmp/
+tmp/
+temp/
+*.tmp
+*.tgz
+
+# Large local geospatial datasets
+*.pmtiles
+*.mbtiles
+*.terrain-rgb
+
+# Editors
+.idea/
+.fleet/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# Operating-system metadata
 .DS_Store
+._*
+.AppleDouble
+Thumbs.db
+Desktop.ini
