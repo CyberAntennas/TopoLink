@@ -1,0 +1,44 @@
+{
+  "name": "@cyberantennas/topo-link-planner",
+  "version": "0.1.0",
+  "description": "Embeddable 3D point-to-point RF link planner",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/topo-link-planner.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "react": ">=18.3.0 <20",
+    "react-dom": ">=18.3.0 <20"
+  },
+  "dependencies": {
+    "lucide-react": "^1.33.0",
+    "maplibre-gl": "^6.5.0",
+    "pmtiles": "^4.5.0",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.16",
+    "@types/three": "^0.185.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}
